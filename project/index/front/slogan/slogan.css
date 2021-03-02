@@ -1,6 +1,6 @@
 .slogan {
   max-width: 100%;
-  padding: 150px 15% 150px 22%;
+  padding: 150px 10% 150px 10%;
   position: relative;
 }
 
@@ -27,6 +27,12 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
+}
+
+@media (min-width: 375px) {
+  .slogan {
+    padding: 150px 15% 150px 22%;
+  }
 }
 
 @media (min-width: 768px) {

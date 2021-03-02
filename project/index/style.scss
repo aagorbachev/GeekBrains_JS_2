@@ -10,8 +10,7 @@ $default-font: "Lato", sans-serif;
 @import "../common_sections/header/header.scss";
 
 /* Menu */
-@import "../common_blocks/menu/menu.scss",
-  "../common_blocks/menu/close-button.scss";
+@import "../common_blocks/menu/menu.scss";
 
 /* Front-page */
 @import "front/front", "front/slogan/slogan";

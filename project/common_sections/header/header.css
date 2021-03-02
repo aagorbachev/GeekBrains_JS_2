@@ -1,34 +1,28 @@
-header {
+.header {
   display: grid;
-  grid-template-columns: 85px 0.5fr 0.5fr 11%;
-  align-items: end;
+  grid-template-columns: 60px 1fr max-content;
+  column-gap: 25px;
+  align-items: center;
+  row-gap: 5px;
   background-color: #222222;
   padding: 18px 15px;
 }
 
-@media (min-width: 768px) {
-  header {
-    padding: 18px 32px;
-    grid-template-columns: 85px 1fr 0.1fr 0.1fr 0.1fr;
-  }
-}
-
-@media (min-width: 1200px) {
-  header {
-    grid-template-columns: 85px 885px 60px 70px 40px;
-    justify-content: center;
-  }
-}
-
-.header__authorize-button {
+.header__registration-button {
   width: 29px;
   height: 29px;
   align-self: center;
 }
 
 @media (max-width: 767px) {
-  .header__authorize-button {
+  .header__registration-button {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__registration-button {
+    grid-area: registration;
   }
 }
 
@@ -39,6 +33,12 @@ header {
 @media (max-width: 767px) {
   .header__cart-button {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__cart-button {
+    grid-area: cart;
   }
 }
 
@@ -53,5 +53,84 @@ header {
 
 .header__menu-button:focus {
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .header__menu-button {
+    grid-area: menu;
+  }
+}
+
+.header__feedback-button {
+  display: none;
+}
+
+.header__search-button {
+  background: none;
+  border: none;
+  width: 26px;
+  width: 26px;
+}
+
+@media (min-width: 768px) {
+  .header__search-button {
+    grid-area: search-button;
+  }
+}
+
+.header__search-form {
+  display: grid;
+  grid-template-columns: 1fr 27px;
+  grid-column: 1 / 4;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+@media (min-width: 768px) {
+  .header__search-form {
+    grid-area: search-field;
+  }
+}
+
+.header__search-input {
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  width: 100%;
+  border: none;
+}
+
+.header__search-input:focus {
+  outline: none;
+}
+
+.header__search-field-button {
+  background-color: transparent;
+  width: 27px;
+  height: 27px;
+  appearance: none;
+  align-self: center;
+  border: none;
+  appearance: none;
+}
+
+.header__search-field-button svg {
+  vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 18px 32px;
+    grid-template-columns: 60px max-content 1fr repeat(3, max-content);
+    grid-template-areas: "logo search-button search-field menu registration cart";
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    grid-template-columns: 60px max-content 835px repeat(3, max-content);
+    grid-template-areas: "logo search-button search-field menu registration cart";
+    justify-content: center;
+  }
 }
 /*# sourceMappingURL=header.css.map */

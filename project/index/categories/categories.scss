@@ -1,11 +1,11 @@
 .categories {
   padding: 64px 16px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(max-content, 344px);
   justify-content: center;
   gap: 32px;
   @media (min-width: 768px) {
-    padding: 20px 16px 155px;
+    padding: 20px 16px 100px;
     grid-template-columns: repeat(3, 232px);
     gap: 20px;
   }

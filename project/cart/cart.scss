@@ -11,9 +11,11 @@
 @import "bottom-header/bottom-header.scss";
 
 /* Cart */
-@import "cart/cart.scss", "cart/cart-item/cart-item.scss",
-  "../common_blocks/menu/menu.scss", "cart/shipping/shipping.scss",
-  "cart/total/total.scss";
+@import "../common_sections/cart/cart.scss",
+  "../common_sections/cart/cart-item/cart-item.scss",
+  "../common_blocks/menu/menu.scss",
+  "../common_sections/cart/shipping/shipping.scss",
+  "../common_sections/cart/total/total.scss";
 
 /* Subscribe */
 @import "../common_sections/subscribe/subsribe.scss",

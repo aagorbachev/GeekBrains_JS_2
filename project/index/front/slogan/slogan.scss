@@ -1,6 +1,6 @@
 .slogan {
   max-width: 100%;
-  padding: 150px 15% 150px 22%;
+  padding: 150px 10% 150px 10%;
   position: relative;
   &__brand {
     text-align: left;
@@ -23,6 +23,9 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
+  }
+  @media (min-width: 375px) {
+    padding: 150px 15% 150px 22%;
   }
   @media (min-width: 768px) {
     padding: 138px 34px 151px 68px;

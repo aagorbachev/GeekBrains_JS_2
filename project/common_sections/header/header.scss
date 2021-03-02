@@ -1,32 +1,29 @@
-header {
+.header {
   display: grid;
-  grid-template-columns: 85px 0.5fr 0.5fr 11%;
-  align-items: end;
+  grid-template-columns: 60px 1fr max-content;
+  column-gap: 25px;
+  align-items: center;
+  row-gap: 5px;
   background-color: #222222;
   padding: 18px 15px;
-  @media (min-width: 768px) {
-    padding: 18px 32px;
-    grid-template-columns: 85px 1fr 0.1fr 0.1fr 0.1fr;
-  }
-  @media (min-width: 1200px) {
-    grid-template-columns: 85px 885px 60px 70px 40px;
-    justify-content: center;
-  }
-}
-
-.header {
-  &__authorize-button {
+  &__registration-button {
     width: 29px;
     height: 29px;
     align-self: center;
     @media (max-width: 767px) {
       display: none;
     }
+    @media (min-width: 768px) {
+      grid-area: registration;
+    }
   }
   &__cart-button {
     align-self: center;
     @media (max-width: 767px) {
       display: none;
+    }
+    @media (min-width: 768px) {
+      grid-area: cart;
     }
   }
   &__menu-button {
@@ -39,7 +36,66 @@ header {
     &:focus {
       outline: none;
     }
+    @media (min-width: 768px) {
+      grid-area: menu;
+    }
   }
   &__feedback-button {
+    display: none;
+  }
+
+  &__search-button {
+    background: none;
+    border: none;
+    width: 26px;
+    width: 26px;
+    @media (min-width: 768px) {
+      grid-area: search-button;
+    }
+  }
+
+  &__search-form {
+    display: grid;
+    grid-template-columns: 1fr 27px;
+    grid-column: 1 / 4;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    @media (min-width: 768px) {
+      grid-area: search-field;
+    }
+  }
+
+  &__search-input {
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 100%;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__search-field-button {
+    background-color: transparent;
+    width: 27px;
+    height: 27px;
+    appearance: none;
+    align-self: center;
+    border: none;
+    appearance: none;
+    & svg {
+      vertical-align: bottom;
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 18px 32px;
+    grid-template-columns: 60px max-content 1fr repeat(3, max-content);
+    grid-template-areas: "logo search-button search-field menu registration cart";
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: 60px max-content 835px repeat(3, max-content);
+    grid-template-areas: "logo search-button search-field menu registration cart";
+    justify-content: center;
   }
 }
