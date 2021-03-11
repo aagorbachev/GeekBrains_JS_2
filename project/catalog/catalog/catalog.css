@@ -2,32 +2,15 @@
   padding: 24px 8px;
   display: grid;
   grid-template-columns: fit-content(360px);
-  grid-template-areas: "controls" "items" "pagination" "cart";
+  grid-template-areas: "controls" "search" "items" "pagination";
   row-gap: 32px;
   justify-content: center;
 }
 
 .catalog__controls {
-  display: grid;
-  row-gap: 5px;
   grid-area: controls;
-  grid-template-areas: "filter search" "sort sort";
-}
-
-@media (min-width: 768px) {
-  .catalog__controls {
-    grid-template-areas: "filter search" ". sort";
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 16px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .catalog__controls {
-    grid-template-areas: "filter search sort";
-    grid-template-columns: repeat(3, 360px);
-    column-gap: 30px;
-  }
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog__filter {
@@ -59,7 +42,7 @@
 
 @media (min-width: 768px) {
   .catalog__items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 360px);
   }
 }
 

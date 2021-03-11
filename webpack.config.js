@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./script/script.js",
+  entry: "./script/app.js",
   output: {
     filename: "./build.js",
   },

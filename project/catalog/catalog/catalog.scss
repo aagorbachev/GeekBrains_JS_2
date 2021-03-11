@@ -4,30 +4,15 @@
   grid-template-columns: fit-content(360px);
   grid-template-areas:
     "controls"
+    "search"
     "items"
-    "pagination"
-    "cart";
+    "pagination";
   row-gap: 32px;
   justify-content: center;
   &__controls {
-    display: grid;
-    row-gap: 5px;
     grid-area: controls;
-    grid-template-areas:
-      "filter search"
-      "sort sort";
-    @media (min-width: 768px) {
-      grid-template-areas:
-        "filter search"
-        ". sort";
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 16px;
-    }
-    @media (min-width: 1200px) {
-      grid-template-areas: "filter search sort";
-      grid-template-columns: repeat(3, 360px);
-      column-gap: 30px;
-    }
+    display: flex;
+    justify-content: space-between;
   }
   &__filter {
     grid-area: filter;
@@ -49,7 +34,7 @@
     gap: 16px;
     margin-bottom: 8px;
     @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 360px);
     }
     @media (min-width: 1200px) {
       grid-template-columns: repeat(3, 360px);

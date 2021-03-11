@@ -10,6 +10,9 @@
 /* Bottom-header */
 @import "bottom-header/bottom-header.scss";
 
+/* Message */
+@import "../common_sections/message/message.scss";
+
 /* Cart */
 @import "../common_sections/cart/cart.scss",
   "../common_sections/cart/cart-item/cart-item.scss",
