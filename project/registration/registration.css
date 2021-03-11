@@ -139,7 +139,6 @@
 }
 
 .menu {
-  display: none;
   background: white;
   padding: 35px;
   width: 230px;
@@ -149,10 +148,6 @@
   right: 0;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 999;
-}
-
-.menu_showed {
-  display: block;
 }
 
 .menu__close-button {
@@ -206,6 +201,26 @@
 
 .close-button:focus {
   outline: none;
+}
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .bottom-header {
@@ -501,34 +516,41 @@
 
 .subscribe-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscribe-form__input {
-  flex: 0 260px;
   box-sizing: border-box;
   padding: 5px 5px 5px 20px;
   background: #e1e1e1;
   height: 47px;
   border: none;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
+  width: 100%;
+  max-width: 260px;
 }
 
 .subscribe-form__input:focus {
   outline: none;
 }
 
+@media (min-width: 375px) {
+  .subscribe-form__input {
+    flex: 0 260px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+}
+
 .subscribe-form__submit-button {
-  flex: 0 0 100px;
+  width: 100%;
+  max-width: 100px;
   height: 47px;
   background: #f16d7f;
   border: none;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
   line-height: 17px;
   text-align: center;
   color: #ffffff;
@@ -536,6 +558,21 @@
 
 .subscribe-form__submit-button:focus, .subscribe-form__submit-button:active {
   outline: none;
+}
+
+@media (min-width: 375px) {
+  .subscribe-form__submit-button {
+    flex: 0 0 100px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
+
+@media (min-width: 375px) {
+  .subscribe-form {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .commentary {

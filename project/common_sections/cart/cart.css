@@ -1,7 +1,7 @@
 .cart {
   padding: 39px 10px 96px;
   display: grid;
-  grid-template-areas: "items items" "buttons buttons" "calculations calculations" "calculations calculations";
+  grid-template-areas: "items items" "calculations calculations" "calculations calculations";
   row-gap: 48px;
   column-gap: 10px;
 }
@@ -10,6 +10,7 @@
   grid-area: items;
   display: grid;
   row-gap: 32px;
+  align-content: start;
 }
 
 @media (min-width: 768px) {
@@ -25,7 +26,6 @@
 }
 
 .cart__buttons {
-  grid-area: buttons;
   display: flex;
   flex-direction: column;
 }
@@ -46,8 +46,8 @@
 @media (min-width: 1140px) {
   .cart__buttons {
     grid-area: unset;
-    grid-row: 2 / 3;
     justify-content: space-between;
+    order: 2;
   }
 }
 
@@ -177,7 +177,7 @@
 
 @media (min-width: 768px) {
   .cart {
-    grid-template-areas: "items items" "buttons buttons" "calculations calculations";
+    grid-template-areas: "items items" "calculations calculations";
     row-gap: 64px;
     column-gap: 15px;
     grid-template-columns: repeat(2, 360px);

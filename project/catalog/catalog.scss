@@ -12,12 +12,14 @@
 @import "bottom-header/bottom-header.scss";
 
 /* Catalog */
-@import "catalog/catalog.scss", "catalog/controls/filter/filter.scss",
-  "catalog/controls/filter/expanded-filter.scss",
-  "catalog/controls/catalog-search/catalog-search.scss",
-  "catalog/controls/sort-form/sort-form.scss",
-  "catalog/controls/sort-form/select.scss", "catalog/catalog-item.scss",
+@import "catalog/catalog.scss", "catalog/controls/filter.scss",
+  "catalog/controls/expanded-filter.scss",
+  "catalog/controls/catalog-search.scss", "catalog/controls/sort-form.scss",
+  "catalog/controls/select.scss", "catalog/catalog-item.scss",
   "catalog/pagination.scss";
+
+/* Message */
+@import "../common_sections/message/message.scss";
 
 /* Cart */
 @import "../common_sections/cart/cart.scss",

@@ -85,6 +85,12 @@
   }
 }
 
+@media (min-width: 1140px) {
+  .cart-item {
+    order: 1;
+  }
+}
+
 .quantity__value {
   margin-left: 15px;
   border: 1px solid #eaeaea;

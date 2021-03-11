@@ -1,0 +1,8 @@
+.sort-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  @media (min-width: 768px) {
+    // column-gap: 48px;
+  }
+}

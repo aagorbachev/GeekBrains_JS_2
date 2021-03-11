@@ -157,11 +157,20 @@
   text-align: center;
 }
 
+/* Message */
+.message {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Cart */
 .cart {
   padding: 39px 10px 96px;
   display: grid;
-  grid-template-areas: "items items" "buttons buttons" "calculations calculations" "calculations calculations";
+  grid-template-areas: "items items" "calculations calculations" "calculations calculations";
   row-gap: 48px;
   column-gap: 10px;
 }
@@ -170,6 +179,7 @@
   grid-area: items;
   display: grid;
   row-gap: 32px;
+  align-content: start;
 }
 
 @media (min-width: 768px) {
@@ -185,7 +195,6 @@
 }
 
 .cart__buttons {
-  grid-area: buttons;
   display: flex;
   flex-direction: column;
 }
@@ -206,8 +215,8 @@
 @media (min-width: 1140px) {
   .cart__buttons {
     grid-area: unset;
-    grid-row: 2 / 3;
     justify-content: space-between;
+    order: 2;
   }
 }
 
@@ -337,7 +346,7 @@
 
 @media (min-width: 768px) {
   .cart {
-    grid-template-areas: "items items" "buttons buttons" "calculations calculations";
+    grid-template-areas: "items items" "calculations calculations";
     row-gap: 64px;
     column-gap: 15px;
     grid-template-columns: repeat(2, 360px);
@@ -443,6 +452,12 @@
   }
 }
 
+@media (min-width: 1140px) {
+  .cart-item {
+    order: 1;
+  }
+}
+
 .quantity__value {
   margin-left: 15px;
   border: 1px solid #eaeaea;
@@ -459,7 +474,6 @@
 }
 
 .menu {
-  display: none;
   background: white;
   padding: 35px;
   width: 230px;
@@ -469,10 +483,6 @@
   right: 0;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 999;
-}
-
-.menu_showed {
-  display: block;
 }
 
 .menu__close-button {
@@ -526,6 +536,26 @@
 
 .close-button:focus {
   outline: none;
+}
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .shipping__title {
