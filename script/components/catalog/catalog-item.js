@@ -12,7 +12,7 @@ export default Vue.component("catalog-item", {
     </p>
     <p class="catalog-item__price">&#8381; {{ product.price }}</p>
   </div>
-  <button @click="$root.addToCart(product)" class="catalog-item__button">Add to Cart</button>
+  <button v-if="isHovered" @click="$root.addToCart(product)" class="catalog-item__button">Add to Cart</button>
 </div>`,
   props: ["product"],
   data: function() {

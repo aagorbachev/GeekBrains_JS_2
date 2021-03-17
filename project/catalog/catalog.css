@@ -658,10 +658,12 @@
   margin: auto;
   height: max-content;
   padding: 5px;
+  cursor: pointer;
 }
 
 .catalog-item_hovered::before {
   opacity: 0.5;
+  z-index: 2;
 }
 
 .pagination {
