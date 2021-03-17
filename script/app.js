@@ -1,4 +1,3 @@
-// import Vue from "vue";
 import catalogItems from "./components/catalog/catalog-items.js";
 import catalogItem from "./components/catalog/catalog-item.js";
 import search from "./components/search.js";
@@ -8,11 +7,25 @@ import shipping from "./components/cart/shipping.js";
 import total from "./components/cart/total.js";
 import error from "./components/error.js";
 import message from "./components/message.js";
-import header from "./components/header/header.js";
+import headerSection from "./components/header/header.js";
 import indexHeader from "./components/header/indexHeader.js";
-import menu from "./components/menu/menu.js";
+import navMenu from "./components/menu/menu.js";
 
 const app = new Vue({
+  // components: {
+  //   catalogItems,
+  //   catalogItem,
+  //   search,
+  //   cart,
+  //   cartItem,
+  //   shipping,
+  //   total,
+  //   error,
+  //   message,
+  //   headerSection,
+  //   indexHeader,
+  //   navMenu,
+  // },
   el: "#root",
   data: {
     menuShowed: false,
@@ -110,3 +123,5 @@ const app = new Vue({
       });
   },
 });
+
+export default app;

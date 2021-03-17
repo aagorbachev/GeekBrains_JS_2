@@ -16,6 +16,7 @@ export default Vue.component("vue-menu", {
   </button>
   <ul class="menu__list">
     <li class="menu__heading">MENU</li>
+    
     <li class="menu__item">
       <a href="#" class="menu__link">MAN</a>
       <ul class="menu__list-secondary list-secondary">

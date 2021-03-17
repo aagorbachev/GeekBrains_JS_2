@@ -1,6 +1,4 @@
 node_modules/
 package-lock.json
 data/cart.json
-data/cart.json
-data/cart.json
 dist/build.js.LICENSE.txt

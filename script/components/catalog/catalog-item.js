@@ -1,5 +1,5 @@
 export default Vue.component("catalog-item", {
-  template: `<div class="catalog__item catalog-item">
+  template: `<div v-bind:class="{'catalog-item_hovered': isHovered}" @mouseenter="setHoverOverlay()" @mouseleave="setHoverOverlay()" class="catalog__item catalog-item">
     <img
     src="../../images/featured/man_coat.jpg"
     alt=""
@@ -15,4 +15,14 @@ export default Vue.component("catalog-item", {
   <button @click="$root.addToCart(product)" class="catalog-item__button">Add to Cart</button>
 </div>`,
   props: ["product"],
+  data: function() {
+    return {
+      isHovered: false,
+    };
+  },
+  methods: {
+    setHoverOverlay() {
+      this.isHovered = !this.isHovered;
+    },
+  },
 });

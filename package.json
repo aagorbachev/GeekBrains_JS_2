@@ -1,10 +1,12 @@
 {
   "name": "js_level_2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Online-store",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,21 +19,14 @@
   },
   "homepage": "https://github.com/aagorbachev/JS-Level-2#readme",
   "dependencies": {
-    "animate.css": "^4.1.1",
+    "babel": "^6.23.0",
     "body-parser": "^1.19.0",
-    "css-loader": "^5.1.1",
     "express": "^4.17.1",
-<<<<<<< Updated upstream
-    "node-static": "^0.7.11"
-  }
-=======
     "jasmine": "^3.6.4",
     "node-static": "^0.7.11",
     "vue": "^2.6.12",
-    "vue-loader": "^15.9.6",
-    "webpack": "^5.24.3",
+    "webpack": "^5.26.2",
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {}
->>>>>>> Stashed changes
 }
