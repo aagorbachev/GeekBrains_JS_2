@@ -1,11 +1,11 @@
 .expanded-filter {
   box-sizing: border-box;
-  width: 360px;
+  width: 100%;
   padding: 13px 16px 16px;
   color: #ef5b70;
   position: absolute;
   z-index: 3;
-  top: -13px;
+  top: 0;
   left: 0;
   background-color: white;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -15,6 +15,9 @@
     background: none;
     border: none;
     width: max-content;
+    &:focus {
+      outline: none;
+    }
   }
   &__button-text {
     color: #ef5b70;
@@ -38,8 +41,8 @@
       height: 10px;
     }
   }
-  @media (min-width: 1200px) {
-    width: 100%;
+  @media (min-width: 768px) {
+    max-width: 360px;
   }
 }
 

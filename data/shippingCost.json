@@ -1,0 +1,50 @@
+[
+  {
+    "id": "7",
+    "country": "Belarus",
+    "city": "Minsk",
+    "cost": "700"
+  },
+  {
+    "id": "8",
+    "country": "Belarus",
+    "city": "Gomel",
+    "cost": "750"
+  },
+  {
+    "id": "9",
+    "country": "Belarus",
+    "city": "Mogilev",
+    "cost": "750"
+  },
+  {
+    "id": "10",
+    "country": "Belarus",
+    "city": "Vitebsk",
+    "cost": "750"
+  },
+  {
+    "id": "11",
+    "country": "Belarus",
+    "city": "Grodno",
+    "cost": "750"
+  },
+  {
+    "id": "12",
+    "country": "Kazakhstan",
+    "city": "Almaty",
+    "cost": "800"
+  },
+  {
+    "id": "13",
+    "country": "Kazakhstan",
+    "city": "Nur-Sultan",
+    "cost": "800"
+  },
+  {
+    "id": "14",
+    "country": "Kazakhstan",
+    "city": "Shymkent",
+    "cost": "800"
+  }
+]

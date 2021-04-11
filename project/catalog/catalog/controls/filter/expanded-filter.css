@@ -1,11 +1,11 @@
 .expanded-filter {
   box-sizing: border-box;
-  width: 360px;
+  width: 100%;
   padding: 13px 16px 16px;
   color: #ef5b70;
   position: absolute;
   z-index: 3;
-  top: -13px;
+  top: 0;
   left: 0;
   background-color: white;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -17,6 +17,10 @@
   background: none;
   border: none;
   width: max-content;
+}
+
+.expanded-filter__button:focus {
+  outline: none;
 }
 
 .expanded-filter__button-text {
@@ -50,9 +54,9 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .expanded-filter {
-    width: 100%;
+    max-width: 360px;
   }
 }
 

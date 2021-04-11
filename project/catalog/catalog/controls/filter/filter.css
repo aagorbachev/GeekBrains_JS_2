@@ -1,33 +1,3 @@
-.filter {
-  position: relative;
-  z-index: 2;
-}
-
-.filter_pushed {
-  color: #ef5b70;
-}
-
-.filter_pushed .filter-button__icon path {
-  fill: #ef5b70;
-}
-
-.filter_pushed .filter-button {
-  color: #ef5b70;
-}
-
-.filter_pushed .options {
-  display: grid;
-}
-
-.filter__expanded-filter {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-
 .filter-button {
   background: none;
   border: none;
@@ -36,6 +6,10 @@
 
 .filter-button:hover {
   cursor: pointer;
+}
+
+.filter-button:focus {
+  outline: none;
 }
 
 .filter-button__text {

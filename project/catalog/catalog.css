@@ -273,8 +273,6 @@
 
 .catalog__controls {
   grid-area: controls;
-  display: flex;
-  justify-content: space-between;
 }
 
 .catalog__filter {
@@ -340,34 +338,10 @@
   }
 }
 
-.filter {
+.catalog-controls {
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  z-index: 2;
-}
-
-.filter_pushed {
-  color: #ef5b70;
-}
-
-.filter_pushed .filter-button__icon path {
-  fill: #ef5b70;
-}
-
-.filter_pushed .filter-button {
-  color: #ef5b70;
-}
-
-.filter_pushed .options {
-  display: grid;
-}
-
-.filter__expanded-filter {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .filter-button {
@@ -378,6 +352,10 @@
 
 .filter-button:hover {
   cursor: pointer;
+}
+
+.filter-button:focus {
+  outline: none;
 }
 
 .filter-button__text {
@@ -409,12 +387,12 @@
 
 .expanded-filter {
   box-sizing: border-box;
-  width: 360px;
+  width: 100%;
   padding: 13px 16px 16px;
   color: #ef5b70;
   position: absolute;
   z-index: 3;
-  top: -13px;
+  top: 0;
   left: 0;
   background-color: white;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -426,6 +404,10 @@
   background: none;
   border: none;
   width: max-content;
+}
+
+.expanded-filter__button:focus {
+  outline: none;
 }
 
 .expanded-filter__button-text {
@@ -459,9 +441,9 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .expanded-filter {
-    width: 100%;
+    max-width: 360px;
   }
 }
 
@@ -550,6 +532,10 @@
   position: relative;
   color: #6f6e6e;
   border: none;
+}
+
+.select:focus {
+  outline: none;
 }
 
 .new-select {
@@ -982,6 +968,10 @@
   right: 12px;
   border: none;
   background: none;
+}
+
+.cart-item__close-button:focus {
+  outline: none;
 }
 
 @media (min-width: 375px) {

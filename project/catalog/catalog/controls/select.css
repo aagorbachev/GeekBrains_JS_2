@@ -5,6 +5,10 @@
   border: none;
 }
 
+.select:focus {
+  outline: none;
+}
+
 .new-select {
   position: relative;
   cursor: pointer;

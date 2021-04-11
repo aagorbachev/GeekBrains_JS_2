@@ -73,6 +73,10 @@
   background: none;
 }
 
+.cart-item__close-button:focus {
+  outline: none;
+}
+
 @media (min-width: 375px) {
   .cart-item {
     grid-template-columns: 145px 1fr;

@@ -53,6 +53,9 @@
     right: 12px;
     border: none;
     background: none;
+    &:focus {
+      outline: none;
+    }
   }
 
   @media (min-width: 375px) {

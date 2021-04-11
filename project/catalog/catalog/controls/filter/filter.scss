@@ -1,26 +1,4 @@
 .filter {
-  position: relative;
-  z-index: 2;
-  &_pushed {
-    color: #ef5b70;
-    .filter-button__icon path {
-      fill: #ef5b70;
-    }
-    .filter-button {
-      color: #ef5b70;
-    }
-    .options {
-      display: grid;
-    }
-  }
-  &__expanded-filter {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  }
 }
 
 .filter-button {
@@ -29,6 +7,9 @@
   width: max-content;
   &:hover {
     cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
   &__text {
     display: none;

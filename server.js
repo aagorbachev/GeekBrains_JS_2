@@ -99,6 +99,28 @@ app.post("/removeFromCart", (req, res) => {
   });
 });
 
+app.get("/countries", (req, res) => {
+  fs.readFile("./data/countries.json", "utf-8", (err, data) => {
+    if (err) {
+      console.error(err);
+      res.send(JSON.stringify({}));
+    } else {
+      res.send(data);
+    }
+  });
+});
+
+app.get("/countries", (req, res) => {
+  fs.readFile("./data/countries.json", "utf-8", (err, data) => {
+    if (err) {
+      console.error(err);
+      res.send(JSON.stringify({}));
+    } else {
+      res.send(data);
+    }
+  });
+});
+
 app.listen(3000, () => {
   console.log("Server start on port 3000");
 });

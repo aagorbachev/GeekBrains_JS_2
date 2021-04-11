@@ -10,6 +10,7 @@ import message from "./components/message.js";
 import headerSection from "./components/header/header.js";
 import indexHeader from "./components/header/indexHeader.js";
 import navMenu from "./components/menu/menu.js";
+import indexNavMenu from "./components/menu/indexMenu.js";
 
 const app = new Vue({
   // components: {

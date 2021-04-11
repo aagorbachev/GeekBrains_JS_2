@@ -11,8 +11,6 @@
   justify-content: center;
   &__controls {
     grid-area: controls;
-    display: flex;
-    justify-content: space-between;
   }
   &__filter {
     grid-area: filter;

@@ -9,8 +9,6 @@
 
 .catalog__controls {
   grid-area: controls;
-  display: flex;
-  justify-content: space-between;
 }
 
 .catalog__filter {

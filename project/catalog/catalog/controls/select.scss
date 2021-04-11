@@ -3,6 +3,9 @@
   position: relative;
   color: #6f6e6e;
   border: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .new-select {

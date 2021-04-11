@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "country": "Russia",
+    "cities": [
+      {
+        "id": "1",
+        "city": "Moscow",
+        "cost": "500"
+      },
+      {
+        "id": "2",
+        "city": "Saint-Petersburg",
+        "cost": "700"
+      },
+      {
+        "id": "3",
+        "city": "Novosibirsk",
+        "cost": "800"
+      },
+      {
+        "id": "4",
+        "city": "Ekaterinburg",
+        "cost": "800"
+      },
+      {
+        "id": "5",
+        "city": "Kazan",
+        "cost": "800"
+      },
+      {
+        "id": "6",
+        "city": "Nijniy-Novgorod",
+        "cost": "600"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "country": "Belarus",
+    "cities": ["Minsk", "Gomel", "Mogilev", "Vitebsk", "Grodno"]
+  },
+  {
+    "id": 3,
+    "country": "Kazakhstan",
+    "cities": ["Almaty", "Nur-Sultan", "Shymkent"]
+  }
+]

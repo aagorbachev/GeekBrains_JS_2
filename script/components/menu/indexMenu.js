@@ -1,4 +1,4 @@
-export default Vue.component("vue-menu", {
+export default Vue.component("vue-index-menu", {
   template: `<nav class="menu">
   <button @click="$root.toggleMenu()" class="menu__close-button close-button">
     <svg
@@ -16,7 +16,7 @@ export default Vue.component("vue-menu", {
   </button>
   <ul class="menu__list">
     <li class="menu__heading">MENU</li>
-    <li class="menu__item"><a href="../catalog/catalog.html" class="menu__link">CATALOG</a></li>
+    <li class="menu__item"><a href="/project/catalog/catalog.html" class="menu__link">CATALOG</a></li>
     <li class="menu__item">
       <a href="#" class="menu__link">MAN</a>
       <ul class="menu__list-secondary list-secondary">
